@@ -1,0 +1,27 @@
+.logo-container {
+  width: 100%; /* Container width remains as desired */
+  height: 150px; /* Adjust height as required */
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logo-container .swiper-wrapper {
+  display: flex;
+  animation: slideLogo 8s linear infinite;
+}
+
+.logo-container .swiper-wrapper img {
+  width: 100px; /* Fixed width for images */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 80px; /* Fixed gap between images */
+}
+
+@keyframes slideLogo {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
